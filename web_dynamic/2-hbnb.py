@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 import uuid
 app = Flask(__name__)
-CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 # app.jinja_env.trim_blocks = True
 # app.jinja_env.lstrip_blocks = True
 
