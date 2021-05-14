@@ -7,10 +7,7 @@ $(document).ready(() => {
   $.ajax({
     url: 'http://0.0.0.0:5001/api/v1/status/',
     type: 'get',
-    data: {
-      zipcode: 97201,
-    },
-    success: function (result, status) {
+    success: function (result) {
       if (result.status === 'OK') $('#api_status').addClass('available');
       else $('#api_status').removeClass('available');
     },
